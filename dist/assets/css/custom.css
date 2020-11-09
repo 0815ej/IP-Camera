@@ -1,0 +1,19 @@
+/* header */
+.header .header-top {height:56px; background-color:#0b4c8e;}
+.topbar .dropdown .text-white {margin-right:6px;}
+.btn.btn-icon.btn-lg, .btn-group-lg > .btn.btn-icon {width:auto;}
+
+.btn.btn-lg i, .btn-group-lg > .btn i {font-size:22px;}
+
+
+@media (min-width: 992px) {
+  .header-fixed .header {height:auto;}
+}
+
+
+@media (min-width: 992px) {
+  .header-fixed .wrapper {padding-top: 56px;}
+}
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {max-width: 1800px;}
+}
