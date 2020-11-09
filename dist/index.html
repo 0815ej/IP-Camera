@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="ko" >
+    <!--begin::Head-->
+    <head>
+        <meta charset="utf-8"/>
+        <title>expage</title>
+        <meta name="description" content="Updates and statistics"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!--begin::Fonts-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>        <!--end::Fonts-->
+
+        <!--begin::Page Vendors Styles(used by this page)-->
+        <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css"/>
+        <!--end::Page Vendors Styles-->
+
+
+        <!--begin::Global Theme Styles(used by all pages)-->
+        <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+        <!--end::Global Theme Styles-->
+
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="shortcut icon" href="assets/media/logos/favicon.ico"/>
+    </head>
+    <!--end::Head-->
+
+    <!--begin::Body-->
+    <body  id="kt_body"  class="header-fixed header-mobile-fixed page-loading"  >
+
+    	<!--begin::Main-->
+    	<!--begin::Header Mobile-->
+      <div id="kt_header_mobile" class="header-mobile bg-primary  header-mobile-fixed " >
+      	<!--begin::Logo-->
+      	<a href="index.html">
+      		<img alt="Logo" src="assets/media/logos/kvisionLogo.png" class="max-h-30px"/>
+      	</a>
+      	<!--end::Logo-->
+
+	<!--begin::Toolbar-->
+	<div class="d-flex align-items-center">
+
+					<button class="btn p-0 burger-icon burger-icon-left ml-4" id="kt_header_mobile_toggle">
+				<span></span>
+			</button>
+
+		<button class="btn p-0 ml-2" id="kt_header_mobile_topbar_toggle">
+			<span class="svg-icon svg-icon-xl"><!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon points="0 0 24 0 24 24 0 24"/>
+        <path d="M12,11 C9.790861,11 8,9.209139 8,7 C8,4.790861 9.790861,3 12,3 C14.209139,3 16,4.790861 16,7 C16,9.209139 14.209139,11 12,11 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"/>
+        <path d="M3.00065168,20.1992055 C3.38825852,15.4265159 7.26191235,13 11.9833413,13 C16.7712164,13 20.7048837,15.2931929 20.9979143,20.2 C21.0095879,20.3954741 20.9979143,21 20.2466999,21 C16.541124,21 11.0347247,21 3.72750223,21 C3.47671215,21 2.97953825,20.45918 3.00065168,20.1992055 Z" fill="#000000" fill-rule="nonzero"/>
+    </g>
+</svg><!--end::Svg Icon--></span>		</button>
+	</div>
+	<!--end::Toolbar-->
+</div>
+<!--end::Header Mobile-->
+	<div class="d-flex flex-column flex-root">
+		<!--begin::Page-->
+		<div class="d-flex flex-row flex-column-fluid page">
+			<!--begin::Wrapper-->
+			<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+				<!--begin::Header-->
+<div id="kt_header" class="header flex-column  header-fixed " >
+	<!--begin::Top-->
+	<div class="header-top">
+		<!--begin::Container-->
+		<div class="container-fluid">
+			<!--begin::Left-->
+			<div class="d-none d-lg-flex align-items-center mr-3">
+				<!--begin::Logo-->
+				<a href="index.html" class="mr-20">
+					<img alt="Logo" src="assets/media/logos/kvisionLogo.png" class="max-h-35px"/>
+				</a>
+				<!--end::Logo-->
+
+				<!--begin::Tab Navs(for desktop mode)-->
+				<ul class="header-tabs nav align-self-end font-size-lg" role="tablist">
+					<!--begin::Item-->
+					<li class="nav-item">
+						<a href="#" class="nav-link py-3 px-6 active" data-toggle="tab" data-target="#kt_header_tab_1" role="tab">
+							비디오
+						</a>
+					</li>
+					<!--end::Item-->
+
+					<!--begin::Item-->
+					<li class="nav-item mr-3">
+						<a href="#" class="nav-link py-3 px-6" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
+							설정
+						</a>
+					</li>
+					<!--end::Item-->
+
+				</ul>
+				<!--begin::Tab Navs-->
+			</div>
+			<!--end::Left-->
+
+			<!--begin::Topbar-->
+			<div class="topbar">
+
+        <!--begin::Languages-->
+        <div class="dropdown">
+
+            <!--begin::Toggle-->
+            <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
+                <div class="btn btn-icon btn-hover-transparent-white btn-dropdown btn-lg mr-2 px-2">
+                    <span class="text-white font-weight-bolder font-size-sm d-none d-md-inline">언어</span>
+                    <img class="h-20px w-20px rounded-sm" src="assets/media/svg/flags/226-united-states.svg" alt=""/>
+                </div>
+            </div>
+            <!--end::Toggle-->
+
+            <!--begin::Dropdown-->
+            <div class="dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right">
+              <!--begin::Nav-->
+              <ul class="navi navi-hover py-4">
+                  <!--begin::Item-->
+                  <li class="navi-item">
+                      <a href="#" class="navi-link">
+                          <span class="symbol symbol-20 mr-3">
+                              <img src="assets/media/svg/flags/226-united-states.svg" alt=""/>
+                          </span>
+                          <span class="navi-text">English</span>
+                      </a>
+                  </li>
+                  <!--end::Item-->
+
+                  <!--begin::Item-->
+                  <li class="navi-item">
+                      <a href="#" class="navi-link">
+                          <span class="symbol symbol-20 mr-3">
+                              <img src="assets/media/svg/flags/063-japan.svg" alt=""/>
+                          </span>
+                          <span class="navi-text">Japanese</span>
+                      </a>
+                  </li>
+                  <!--end::Item-->
+
+                  <!--begin::Item-->
+                  <li class="navi-item">
+                      <a href="#" class="navi-link">
+                          <span class="symbol symbol-20 mr-3">
+                              <img src="assets/media/svg/flags/094-south-korea.svg" alt=""/>
+                          </span>
+                          <span class="navi-text">Korea</span>
+                      </a>
+                  </li>
+                  <!--end::Item-->
+              </ul>
+              <!--end::Nav-->
+            </div>
+            <!--end::Dropdown-->
+        </div>
+        <!--end::Languages-->
+
+    		<!--begin::logout-->
+        <div class="topbar-item">
+					<div class="btn btn-icon btn-hover-transparent-white w-lg-auto d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+						<span class="symbol symbol-35">
+              <span class="text-white opacity-50 font-weight-bold font-size-sm d-none d-md-inline">log</span>
+							<span class="text-white font-weight-bolder font-size-sm d-none d-md-inline">Out</span>
+              <i class="la la-sign-out-alt"></i>
+						</span>
+					</div>
+        </div>
+        <!--end::logout-->
+			</div>
+			<!--end::Topbar-->
+		</div>
+		<!--end::Container-->
+	</div>
+	<!--end::Top-->
+
+
+</div>
+<!--end::Header-->
+
+<!--begin::Bottom-->
+<div class="aside aside-left aside-fixed">
+
+    <!--begin::Header Menu Wrapper-->
+    <div class="header-navs header-navs-left" id="kt_header_navs">
+      <!--begin::Tab Navs(for tablet and mobile modes)-->
+      <ul class="header-tabs p-5 p-lg-0 d-flex d-lg-none nav nav-bold nav-tabs" role="tablist">
+        <!--begin::Item-->
+        <li class="nav-item mr-2">
+          <a href="#" class="nav-link btn btn-clean active" data-toggle="tab" data-target="#kt_header_tab_1" role="tab">
+            Home
+          </a>
+        </li>
+        <!--end::Item-->
+
+        <!--begin::Item-->
+        <li class="nav-item mr-2">
+          <a href="#" class="nav-link btn btn-clean" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
+            Reports
+          </a>
+        </li>
+        <!--end::Item-->
+
+        <!--begin::Item-->
+        <li class="nav-item mr-2">
+          <a href="#" class="nav-link btn btn-clean" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
+            Orders
+          </a>
+        </li>
+        <!--end::Item-->
+
+        <!--begin::Item-->
+        <li class="nav-item mr-2">
+          <a href="#" class="nav-link btn btn-clean" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
+            Help Ceter
+          </a>
+        </li>
+        <!--end::Item-->
+      </ul>
+      <!--begin::Tab Navs-->
+
+      <!--begin::Tab Content-->
+      <div class="tab-content">
+        <!--begin::Tab Pane-->
+        <div class="tab-pane py-5 p-lg-0 show active" id="kt_header_tab_1">
+          <!--begin::Menu-->
+          <div id="kt_header_menu" class="header-menu-mobile  header-menu-layout-default aside-menu my-4 scroll ps ps--active-y" >
+            <!--begin::Nav-->
+            <ul class="menu-nav ">
+              <li class="menu-item  menu-item-active "  aria-haspopup="true">
+                <a  href="index.html" class="menu-link ">
+                  <span class="menu-text">Network</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text">Streaming</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text">OSD</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text">ISP</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text">Alarm</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text">System</span>
+                </a>
+              </li>
+            </ul>
+            <!--end::Nav-->
+          </div>
+          <!--end::Menu-->
+          <!--begin::Content-->
+          <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
+
+          	<!--begin::Entry-->
+          	<div class="d-flex flex-column-fluid">
+          		<!--begin::Container-->
+          		<div class=" container ">
+
+          		</div>
+          		<!--end::Content-->
+          	</div>
+          	<!--end::Demo Panel-->
+          </div>
+        </div>
+        <!--begin::Tab Pane-->
+
+        <!--begin::Tab Pane-->
+        <div class="tab-pane p-5 p-lg-0 justify-content-between" id="kt_header_tab_2">
+          <!--begin::Content-->
+          <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
+
+          	<!--begin::Entry-->
+          	<div class="d-flex flex-column-fluid">
+          		<!--begin::Container-->
+          		<div class=" container ">
+
+          		</div>
+          		<!--end::Content-->
+          	</div>
+          	<!--end::Demo Panel-->
+          </div>
+        </div>
+        <!--begin::Tab Pane-->
+      </div>
+      <!--end::Tab Content-->
+    </div>
+    <!--end::Header Menu Wrapper-->
+
+</div>
+<!--end::Bottom-->
+
+
+<script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
+<!--begin::Global Config(global config for global JS scripts)-->
+<script>
+    var KTAppSettings = {
+"breakpoints": {
+"sm": 576,
+"md": 768,
+"lg": 992,
+"xl": 1200,
+"xxl": 1200
+},
+"colors": {
+"theme": {
+    "base": {
+        "white": "#ffffff",
+        "primary": "#6993FF",
+        "secondary": "#E5EAEE",
+        "success": "#1BC5BD",
+        "info": "#8950FC",
+        "warning": "#FFA800",
+        "danger": "#F64E60",
+        "light": "#F3F6F9",
+        "dark": "#212121"
+    },
+    "light": {
+        "white": "#ffffff",
+        "primary": "#E1E9FF",
+        "secondary": "#ECF0F3",
+        "success": "#C9F7F5",
+        "info": "#EEE5FF",
+        "warning": "#FFF4DE",
+        "danger": "#FFE2E5",
+        "light": "#F3F6F9",
+        "dark": "#D6D6E0"
+    },
+    "inverse": {
+        "white": "#ffffff",
+        "primary": "#ffffff",
+        "secondary": "#212121",
+        "success": "#ffffff",
+        "info": "#ffffff",
+        "warning": "#ffffff",
+        "danger": "#ffffff",
+        "light": "#464E5F",
+        "dark": "#ffffff"
+    }
+},
+"gray": {
+    "gray-100": "#F3F6F9",
+    "gray-200": "#ECF0F3",
+    "gray-300": "#E5EAEE",
+    "gray-400": "#D6D6E0",
+    "gray-500": "#B5B5C3",
+    "gray-600": "#80808F",
+    "gray-700": "#464E5F",
+    "gray-800": "#1B283F",
+    "gray-900": "#212121"
+}
+},
+"font-family": "Poppins"
+};
+</script>
+<!--end::Global Config-->
+
+<!--begin::Global Theme Bundle(used by all pages)-->
+<script src="assets/plugins/global/plugins.bundle.js"></script>
+<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
+<script src="assets/js/scripts.bundle.js"></script>
+<!--end::Global Theme Bundle-->
+
+<!--begin::Page Vendors(used by this page)-->
+<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
+<!--end::Page Vendors-->
+
+<!--begin::Page Scripts(used by this page)-->
+<script src="assets/js/pages/widgets.js"></script>
+<!--end::Page Scripts-->
+
+</body>
+<!--end::Body-->
+</html>
