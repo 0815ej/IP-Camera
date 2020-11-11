@@ -33,7 +33,7 @@
 
     	<!--begin::Main-->
     	<!--begin::Header Mobile-->
-      <div id="kt_header_mobile" class="header-mobile bg-primary  header-mobile-fixed " >
+      <div id="kt_header_mobile" class="header-mobile header-mobile-fixed " >
       	<!--begin::Logo-->
       	<a href="index.html">
       		<img alt="Logo" src="assets/media/logos/kvisionLogo.png" class="max-h-30px"/>
@@ -47,7 +47,7 @@
 				<span></span>
 			</button>
 
-		<button class="btn p-0 ml-2" id="kt_header_mobile_topbar_toggle">
+		<button class="btn p-0 ml-6 mr-2" id="kt_header_mobile_topbar_toggle">
 			<span class="svg-icon svg-icon-xl"><!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <polygon points="0 0 24 0 24 24 0 24"/>
@@ -82,7 +82,7 @@
 				<ul class="header-tabs nav align-self-end font-size-lg" role="tablist">
 					<!--begin::Item-->
 					<li class="nav-item">
-						<a href="#" class="nav-link py-3 px-6 active" data-toggle="tab" data-target="#kt_header_tab_1" role="tab">
+						<a href="#" class="nav-link py-3 px-6" data-toggle="tab" data-target="#kt_header_tab_1" role="tab">
 							비디오
 						</a>
 					</li>
@@ -90,7 +90,7 @@
 
 					<!--begin::Item-->
 					<li class="nav-item mr-3">
-						<a href="#" class="nav-link py-3 px-6" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
+						<a href="#" class="nav-link py-3 px-6 active" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
 							설정
 						</a>
 					</li>
@@ -98,6 +98,7 @@
 
 				</ul>
 				<!--begin::Tab Navs-->
+
 			</div>
 			<!--end::Left-->
 
@@ -109,9 +110,9 @@
 
             <!--begin::Toggle-->
             <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
-                <div class="btn btn-icon btn-hover-transparent-white btn-dropdown btn-lg mr-2 px-2">
-                    <span class="text-white font-weight-bolder font-size-sm d-none d-md-inline">언어</span>
-                    <img class="h-20px w-20px rounded-sm" src="assets/media/svg/flags/226-united-states.svg" alt=""/>
+                <div class="btn btn-icon btn-hover-transparent-white btn-dropdown btn-lg mr-2 px-3">
+                    <img class="rounded-sm" src="assets/media/svg/flags/226-united-states.svg" alt=""/>
+                    <span class="text-white font-weight-bolder font-size-sm d-none d-md-inline">언어<i class="fas fa-sort-down"></i></span>
                 </div>
             </div>
             <!--end::Toggle-->
@@ -161,7 +162,7 @@
 
     		<!--begin::logout-->
         <div class="topbar-item">
-					<div class="btn btn-icon btn-hover-transparent-white w-lg-auto d-flex align-items-center btn-lg px-2" id="kt_quick_user_toggle">
+					<div class="btn btn-icon btn-hover-transparent-white w-lg-auto d-flex align-items-center btn-lg px-3" id="kt_quick_user_toggle">
 						<span class="symbol symbol-35">
               <span class="text-white opacity-50 font-weight-bold font-size-sm d-none d-md-inline">log</span>
 							<span class="text-white font-weight-bolder font-size-sm d-none d-md-inline">Out</span>
@@ -182,128 +183,138 @@
 <!--end::Header-->
 
 <!--begin::Bottom-->
-<div class="aside aside-left aside-fixed">
+<div>
 
     <!--begin::Header Menu Wrapper-->
     <div class="header-navs header-navs-left" id="kt_header_navs">
-      <!--begin::Tab Navs(for tablet and mobile modes)-->
-      <ul class="header-tabs p-5 p-lg-0 d-flex d-lg-none nav nav-bold nav-tabs" role="tablist">
-        <!--begin::Item-->
-        <li class="nav-item mr-2">
-          <a href="#" class="nav-link btn btn-clean active" data-toggle="tab" data-target="#kt_header_tab_1" role="tab">
-            Home
+      <!--begin::Nav-->
+      <ul class="menu-nav d-lg-none">
+        <li class="menu-item  menu-item-active "  aria-haspopup="true">
+          <a  href="index.html" class="menu-link ">
+            <span class="menu-text">Dashboard</span>
           </a>
         </li>
-        <!--end::Item-->
-
-        <!--begin::Item-->
-        <li class="nav-item mr-2">
-          <a href="#" class="nav-link btn btn-clean" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
-            Reports
+        <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+          <a  href="javascript:;" class="menu-link menu-toggle">
+            <span class="menu-text">Features</span>
+            <span class="menu-desc"></span>
+            <i class="menu-arrow"></i>
           </a>
-        </li>
-        <!--end::Item-->
-
-        <!--begin::Item-->
-        <li class="nav-item mr-2">
-          <a href="#" class="nav-link btn btn-clean" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
-            Orders
-          </a>
-        </li>
-        <!--end::Item-->
-
-        <!--begin::Item-->
-        <li class="nav-item mr-2">
-          <a href="#" class="nav-link btn btn-clean" data-toggle="tab" data-target="#kt_header_tab_2" role="tab">
-            Help Ceter
-          </a>
-        </li>
-        <!--end::Item-->
-      </ul>
-      <!--begin::Tab Navs-->
-
-      <!--begin::Tab Content-->
-      <div class="tab-content">
-        <!--begin::Tab Pane-->
-        <div class="tab-pane py-5 p-lg-0 show active" id="kt_header_tab_1">
-          <!--begin::Menu-->
-          <div id="kt_header_menu" class="header-menu-mobile  header-menu-layout-default aside-menu my-4 scroll ps ps--active-y" >
-            <!--begin::Nav-->
-            <ul class="menu-nav ">
-              <li class="menu-item  menu-item-active "  aria-haspopup="true">
-                <a  href="index.html" class="menu-link ">
-                  <span class="menu-text">Network</span>
+          <div class="menu-submenu menu-submenu-classic menu-submenu-left" >
+            <ul class="menu-subnav">
+              <li class="menu-item  menu-item-submenu"  data-menu-toggle="hover" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link">
+                  <span class="menu-text">Bootstrap</span>
                 </a>
               </li>
-              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
-                <a  href="javascript:;" class="menu-link menu-toggle">
-                  <span class="menu-text">Streaming</span>
-                </a>
-              </li>
-              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
-                <a  href="javascript:;" class="menu-link menu-toggle">
-                  <span class="menu-text">OSD</span>
-                </a>
-              </li>
-              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
-                <a  href="javascript:;" class="menu-link menu-toggle">
-                  <span class="menu-text">ISP</span>
-                </a>
-              </li>
-              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
-                <a  href="javascript:;" class="menu-link menu-toggle">
-                  <span class="menu-text">Alarm</span>
-                </a>
-              </li>
-              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
-                <a  href="javascript:;" class="menu-link menu-toggle">
-                  <span class="menu-text">System</span>
+              <li class="menu-item  menu-item-submenu"  data-menu-toggle="hover" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link">
+                  <span class="menu-text">Bootstrap</span>
                 </a>
               </li>
             </ul>
-            <!--end::Nav-->
           </div>
-          <!--end::Menu-->
-          <!--begin::Content-->
-          <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
-
-          	<!--begin::Entry-->
-          	<div class="d-flex flex-column-fluid">
-          		<!--begin::Container-->
-          		<div class=" container ">
-
-          		</div>
-          		<!--end::Content-->
-          	</div>
-          	<!--end::Demo Panel-->
-          </div>
-        </div>
-        <!--begin::Tab Pane-->
-
-        <!--begin::Tab Pane-->
-        <div class="tab-pane p-5 p-lg-0 justify-content-between" id="kt_header_tab_2">
-          <!--begin::Content-->
-          <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
-
-          	<!--begin::Entry-->
-          	<div class="d-flex flex-column-fluid">
-          		<!--begin::Container-->
-          		<div class=" container ">
-
-          		</div>
-          		<!--end::Content-->
-          	</div>
-          	<!--end::Demo Panel-->
-          </div>
-        </div>
-        <!--begin::Tab Pane-->
-      </div>
-      <!--end::Tab Content-->
+        </li>
+      </ul>
     </div>
     <!--end::Header Menu Wrapper-->
 
 </div>
 <!--end::Bottom-->
+
+<!--begin::Tab Content-->
+<div class="tab-content">
+
+
+  <!--begin::Tab Pane-->
+  <div class="tab-pane p-5 p-lg-0 justify-content-between" id="kt_header_tab_1">
+    <!--begin::Content-->
+    <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
+
+      <!--begin::Entry-->
+      <div class="d-flex flex-column-fluid">
+        <!--begin::Container-->
+        <div class=" container ">
+
+        </div>
+        <!--end::Content-->
+      </div>
+      <!--end::Demo Panel-->
+    </div>
+  </div>
+  <!--begin::Tab Pane-->
+
+
+
+  <!--begin::Tab Pane-->
+  <div class="tab-pane py-5 p-lg-0 show active" id="kt_header_tab_2">
+    <!--begin::Content-->
+    <div class="content  d-flex flex-column flex-column-fluid" id="kt_content">
+
+      <!--begin::Entry-->
+      <div class="d-flex flex-column-fluid">
+        <!--begin::Container-->
+        <div class=" container ">
+          <!--begin::Menu-->
+          <div class="aside aside-left aside-fixed">
+          <div id="kt_header_menu" class="header-menu-mobile  header-menu-layout-default aside-menu scroll ps ps--active-y" >
+            <!--begin::Nav-->
+            <ul class="menu-nav ">
+              <li class="menu-item  menu-item-active "  aria-haspopup="true">
+                <a  href="index.html" class="menu-link ">
+                  <span class="menu-text"><i class="la la-network-wired"></i>Network</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text"><i class="la la-video"></i>Streaming</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text"><i class="la la-desktop"></i>OSD</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text"><i class="la la-camera"></i>ISP</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text"><i class="la la-bell"></i>Alarm</span>
+                </a>
+              </li>
+              <li class="menu-item  menu-item-submenu menu-item-rel"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
+                  <span class="menu-text"><i class="la la-cog"></i>System</span>
+                </a>
+              </li>
+            </ul>
+            <!--end::Nav-->
+          </div>
+          </div>
+          <!--end::Menu-->
+          <div class="conts">
+
+          </div>
+        </div>
+        <!--end::Content-->
+      </div>
+      <!--end::Demo Panel-->
+    </div>
+  </div>
+  <!--begin::Tab Pane-->
+
+</div>
+<!--end::Tab Content-->
+
+
+
+
+
+
+
 
 
 <script>var HOST_URL = "https://preview.keenthemes.com/metronic/theme/html/tools/preview";</script>
