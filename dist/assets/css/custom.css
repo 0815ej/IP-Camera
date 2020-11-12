@@ -152,6 +152,7 @@ label {margin-bottom:0.35rem;}
   .header .header-top {height:50px;}
   #kt_header [alt=Logo] {max-height:18px !important;}
   body.form .tab-content > .active {height:100%;}
+  body.form .sticky-bottom {position:relative; bottom:0;}
 }
 @media (max-width: 991px) {
   .flex-column-fluid {width:100%;}
@@ -215,7 +216,7 @@ label {margin-bottom:0.35rem;}
   box-shadow:0px 0px 25px 0px rgba(82, 63, 105, 0.15);
   -webkit-box-shadow:0px 0px 25px 0px rgba(82, 63, 105, 0.15);
 }
-.card.card-custom > .card-header {min-height:56px;}
+.card.card-custom > .card-header {min-height:46px;}
 /* .switch input ~ span:before {border:1px solid #E4E6EF;} */
 .switch input:checked ~ span:before {background-color:#3699ff; border-color:#1b80e6;}
 .switch.switch-sm input:empty ~ span:after {width:18px; height:18px; top:3px; bottom:3px; }
