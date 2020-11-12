@@ -229,7 +229,9 @@ label {margin-bottom:0.35rem;}
 .card.card-custom > .card-header {min-height:46px;}
 /* .switch input ~ span:before {border:1px solid #E4E6EF;} */
 .switch input:checked ~ span:before {background-color:#3699ff; border-color:#1b80e6;}
-.switch.switch-sm input:empty ~ span:after {width:18px; height:18px; top:3px; bottom:3px; }
+.switch.switch-sm input:empty ~ span {height:22px;}
+.switch.switch-sm input:empty ~ span:after {width:16px; height:16px; top:3px; bottom:3px;}
+.switch.switch-sm input:checked ~ span:after {margin-left:17.5px;}
 /* border:1px solid #E4E6EF; */
 .switch input:checked ~ span:after {border-color:#1b80e6 !important; background-color:#fff;}
 .nonConts > .card-body {display:none;}
