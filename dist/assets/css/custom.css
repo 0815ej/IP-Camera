@@ -228,8 +228,7 @@ label {margin-bottom:0.35rem;}
 .card.nonConts, .card.card-collapse {border-bottom:0;}
 .card.nonConts > .card-header, .card.card-collapse > .card-header {border-radius:0.42rem;}
 .card.nonConts > .card-header > div:last-of-type {display:none;}
-.form-group.row > label {margin-bottom:2px; display:flex; align-items:center;}
-.form-group.row > * {padding-right:12.5px; padding-left:12.5px;}
+.form-group.row > label {margin-bottom:2px; display:flex; align-items:center; padding-right:0.75rem; padding-left:12.5px;}
 .sticky-bottom {position:sticky; bottom:0; z-index:1020; background-color:#fff;}
 body.form .sticky-bottom {bottom:54px;}
 /* body.form .sticky-bottom .btnGroup {position:relative;}
