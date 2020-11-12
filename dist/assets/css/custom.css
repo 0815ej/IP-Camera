@@ -140,6 +140,15 @@ label {margin-bottom:0.35rem;}
   body.form .conts > .row > div > form
   {height:100%;}
   body.form .conts > .row > div > form > .row {height:calc(100% - 63px);}
+  /* .card.card-custom.card-collapse > .card-header {
+    border-radius:0;
+  }
+  .card.card-custom.card-collapse > .card-body {
+    display: flex;
+    padding: 2rem 2.25rem;
+    border-bottom: 1px solid #EBEDF3;
+    border-radius: 0.42rem;
+  } */
 }
 @media (max-width: 1199px) {
   .conts .col-6 {
@@ -163,6 +172,7 @@ label {margin-bottom:0.35rem;}
   form > .row > [class*=col-] {padding-right:15px; padding-left:15px;}
   .conts > .row > .col-5 {height:calc(100vh - 142px); overflow-y:auto;}
 }
+
 @media (max-width: 799px) {
   .conts {padding:15px 25px 25px 25px;}
   .conts > .row {height:100%;}
