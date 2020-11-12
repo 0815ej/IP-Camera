@@ -152,7 +152,7 @@ label {margin-bottom:0.35rem;}
   .header .header-top {height:50px;}
   #kt_header [alt=Logo] {max-height:18px !important;}
   body.form .tab-content > .active {height:100%;}
-  body.form .sticky-bottom {position:relative; bottom:0;}
+  body.form .sticky-bottom {position:relative; bottom:0 !important;}
 }
 @media (max-width: 991px) {
   .flex-column-fluid {width:100%;}
