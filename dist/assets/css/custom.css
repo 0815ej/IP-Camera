@@ -2,7 +2,7 @@
 .header .header-top {height:56px; background-color:#0b4c8e;}
 .dropdown .text-white {margin-left:6px;}
 .dropdown .text-white i {margin-bottom:3px; font-size:12px !important; margin-left:6px;}
-.dropdown.show .text-white i {transform:rotate(180deg); margin-bottom:-2px;}
+.dropdown.show .text-white i {transform:rotate(180deg); margin-bottom:-2px !important;}
 .topbar-item.dropdown img {width:17px; height:17px;}
 .btn.btn-icon.btn-lg, .btn-group-lg > .btn.btn-icon {width:auto;}
 .btn.btn-lg i, .btn-group-lg > .btn i {font-size:22px;}
@@ -389,9 +389,44 @@ body.login form > button {width:100%;}
   .betweenFlex {padding:20px 30px;}
   .frame-bottom .betweenFlex {padding:40px 30px;}
   body.login .dropdown {margin-left:0.5rem !important;}
-  body.login .dropdown-menu.dropdown-menu-sm {left:138px !important;}
   .clock div + div {margin-left:20px !important;}
+  /* body.login .dropdown-menu.dropdown-menu-sm {left:92px !important;} */
+  body.login .dropdown-menu.dropdown-menu-sm {
+    left: 50% !important;
+    right: 0 !important;
+    top: 50% !important;
+    width: 80% !important;
+    position: fixed !important;
+    transform: translate(-50%, -50%) !important;
+  }
+  /* body.login dropdown-menu.dropdown-menu-sm:before {
+    content: '';
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  } */
+  body.login .dropdown .topbar-item[aria-expanded=true]:before {
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
+/* @media (max-width: 767px) {
+  body.login .dropdown-menu.dropdown-menu-sm {width:130px !important;}
+} */
 @media (max-width: 499px) {
   [class*=frame-] {padding:30px;}
   [class*=frame-]:before, [class*=frame-]:after {width:50px; height:50px;}
@@ -403,4 +438,6 @@ body.login form > button {width:100%;}
   .frame-bottom .betweenFlex {padding:10px 20px;}
   .clock div + div {margin-left:15px !important;}
   .login-form {padding:0 !important;}
+  /* .dropdown-menu.dropdown-menu-sm {width:130px !important;} */
+
 }
