@@ -1,8 +1,8 @@
 /* header */
 .header .header-top {height:56px; background-color:#0b4c8e;}
-.dropdown .text-white {margin-left:5px;}
-.topbar .dropdown .text-white i {font-size:12px; margin-left:6px;}
-.dropdown.show .text-white i {transform:rotate(180deg); margin-bottom:2px;}
+.dropdown .text-white {margin-left:6px;}
+.dropdown .text-white i {margin-bottom:3px; font-size:12px !important; margin-left:6px;}
+.dropdown.show .text-white i {transform:rotate(180deg); margin-bottom:-2px;}
 .topbar-item.dropdown img {width:17px; height:17px;}
 .btn.btn-icon.btn-lg, .btn-group-lg > .btn.btn-icon {width:auto;}
 .btn.btn-lg i, .btn-group-lg > .btn i {font-size:22px;}
@@ -17,7 +17,7 @@
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {max-width: 1800px;}
 }
 @media (min-width: 768px) {
-  .dropdown .d-md-inline {display:flex !important;}
+  .dropdown .d-md-inline {align-items:center; display:flex !important;}
 }
 
 /* setting leftmenu */
@@ -275,6 +275,10 @@ body.form .sticky-bottom .btnGroup:before {
 .card.card-custom > .card-header {align-items:center;}
 
 
+
+
+/* login */
+
 body.login {
     position: relative;
     width: 100%;
@@ -284,8 +288,15 @@ body.login {
     /* background-image:linear-gradient(to left bottom, #07050d, #0c0815, #100a1c, #120d22, #130f29); */
     background-image:linear-gradient(to left bottom, #073d73, #183e69, #1c395d, #193554, #1e3c5f);
 }
-
-/* login */
+/* body.login .dropdown .btn.btn-icon {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+} */
+body.login .btn.btn-icon.btn-lg {height:auto; margin-top:1px;}
+body.login .login-signin .mb-15 .d-flex {align-items:center; justify-content:center;}
+body.login .dropdown-menu.dropdown-menu-sm {left:89px !important;}
+body.login form > button {width:100%;}
 .login-signin .mb-15 .text-muted {margin-top:5px;}
 .bg {
   position: fixed;
@@ -364,3 +375,32 @@ body.login {
 .clock {font-size:26px; display:flex;}
 .clock div + div {margin-left:30px;}
 .login-form {padding:70px 60px !important;}
+@media (max-width: 991.98px) {
+  body.login .topbar-item.dropdown img {
+      width: 17px;
+      height: 17px;
+  }
+}
+@media (max-width: 799px) {
+  .battery i {font-size:4rem !important;}
+  .clock {font-size:22px;}
+  .rec .text {font-size:26px;}
+  .rec .circle {width:16px; height:16px;}
+  .betweenFlex {padding:20px 30px;}
+  .frame-bottom .betweenFlex {padding:40px 30px;}
+  body.login .dropdown {margin-left:0.5rem !important;}
+  body.login .dropdown-menu.dropdown-menu-sm {left:138px !important;}
+  .clock div + div {margin-left:20px !important;}
+}
+@media (max-width: 499px) {
+  [class*=frame-] {padding:30px;}
+  [class*=frame-]:before, [class*=frame-]:after {width:50px; height:50px;}
+  .battery i {font-size:2.8rem !important;}
+  .clock {font-size:16px;}
+  .rec .text {font-size:20px;}
+  .rec .circle {width:12px; height:12px;}
+  .betweenFlex {padding:14px 20px; width:calc(100% - 60px);}
+  .frame-bottom .betweenFlex {padding:10px 20px;}
+  .clock div + div {margin-left:15px !important;}
+  .login-form {padding:0 !important;}
+}
