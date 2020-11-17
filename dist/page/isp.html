@@ -4,7 +4,7 @@
     <!--begin::Head-->
     <head>
         <meta charset="utf-8"/>
-        <title>KVISION ::: NETWORK</title>
+        <title>KVISION ::: ISP</title>
         <meta name="description" content="Updates and statistics"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
@@ -29,7 +29,7 @@
     <!--end::Head-->
 
     <!--begin::Body-->
-    <body  id="kt_body"  class="header-fixed header-mobile-fixed page-loading form">
+    <body  id="kt_body"  class="header-fixed header-mobile-fixed page-loading">
 
     	<!--begin::Main-->
     	<!--begin::Header Mobile-->
@@ -494,7 +494,11 @@
       <div class="d-flex flex-column-fluid">
         <!--begin::Container-->
         <div class=" container ">
-
+          <div>
+            <figure class="fullVideo">
+              <iframe src="https://www.youtube.com/embed/RI0Hx72On9Q?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1" frameborder="0" allow="fullscreen; autoplay;" allowfullscreen></iframe>
+            </figure>
+          </div>
         </div>
         <!--end::Content-->
       </div>
@@ -519,8 +523,8 @@
           <div id="kt_aside_menu" class="aside-menu my-4 ps ps--active-y">
             <!--begin::Nav-->
             <ul class="menu-nav scroll" data-scroll="true" data-wheel-propagation="true">
-              <li class="menu-item menu-item-active"  aria-haspopup="true">
-                <a  href="javascript:;" class="menu-link">
+              <li class="menu-item"  aria-haspopup="true">
+                <a  href="network.html" class="menu-link">
                   <span class="svg-icon menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -564,8 +568,8 @@
                   <span class="menu-text">OSD</span>
                 </a>
               </li>
-              <li class="menu-item"  data-menu-toggle="click" aria-haspopup="true">
-                <a  href="setIsp.html" class="menu-link menu-toggle">
+              <li class="menu-item menu-item-active"  data-menu-toggle="click" aria-haspopup="true">
+                <a  href="javascript:;" class="menu-link menu-toggle">
                   <span class="svg-icon menu-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -740,188 +744,242 @@
           <!--end::Menu-->
           <div class="d-flex flex-column-fluid">
             <div class="conts">
-              <div class="row">
-                <div class="col-12">
-                  <form>
-                    <div class="row col-12 scroll" data-scroll="true" data-wheel-propagation="true">
-                      <!--begin::Card-->
-                      <div class="col-6">
-                        <div class="card card-custom gutter-b" data-card="true">
-                        	<div class="card-header flex-wrap">
-                        		<div class="card-title" >
-                                <h3 class="card-label">
-                          				Port
-                          			</h3>
-                        		</div>
-                            <div>
-                              <a href="javascript:;" class="btn btn-icon btn-sm btn-light-primary mr-1" data-card-tool="toggle" >
-                        		  	<i class="ki ki-arrow-up icon-nm"></i>
-                        			</a>
-                            </div>
-                        	</div>
-                        	<div class="card-body">
-                            <div>
-                              <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                      <label>HTTP Port <span class="text-danger">*</span></label>
-                                      <div>
-                                       <input type="text" class="form-control" placeholder="HTTP Port"/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>HTTP Port</label>
-                                      <div>
-                                       <input type="text" class="form-control" placeholder="HTTP Port"/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>RTSP Port</label>
-                                      <div>
-                                       <input type="text" class="form-control" placeholder="RTSP Port"/>
-                                      </div>
-                                    </div>
-                                     <!-- <div class="form-group">
-                                       <label>Brightness</label>
-                                       <div class="ion-range-slider">
-                                        <input type="hidden" id="kt_slider_1"/>
-                                       </div>
-                                     </div> -->
-                                </div>
+                <div class="row">
+                  <div class="col-7 sticky-top">
+                    <figure class="video">
+                      <iframe src="https://www.youtube.com/embed/RI0Hx72On9Q?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&muted=1" frameborder="0" allow="fullscreen; autoplay;" allowfullscreen></iframe>
+                    </figure>
+                  </div>
+                  <div class="col-5 scroll" data-scroll="true" data-wheel-propagation="true">
+                    <form>
+                      <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                              <label>Brightness</label>
+                              <div class="row align-items-center">
+                               <div class="col-4">
+                                <input type="text" class="form-control sliderInput" placeholder="Brightness"/>
+                               </div>
+                               <div class="col-8">
+                                <div class="nouislider nouislider-handle-danger slider"></div>
+                               </div>
                               </div>
                             </div>
-                        	</div>
-                        </div>
-                        <div class="card card-custom gutter-b nonConts" data-card="true">
-                        	<div class="card-header flex-wrap ">
-                        		<div class="card-title" >
-                                <h3 class="card-label">
-                          				UPnP
-                          			</h3>
-                                <span class="switch switch-sm">
-                                  <label>
-                                   <input type="checkbox" checked="checked" name="select"/>
-                                   <span></span>
-                                  </label>
-                               </span>
-                        		</div>
-                            <div>
-                              <a href="javascript:;" class="btn btn-icon btn-sm btn-light-primary mr-1" data-card-tool="toggle" >
-                        		  	<i class="ki ki-arrow-up icon-nm"></i>
-                        			</a>
-                            </div>
-                        	</div>
-                        	<div class="card-body">
-                        	</div>
-                        </div>
-                        <div class="card card-custom gutter-b nonConts" data-card="true">
-                        	<div class="card-header flex-wrap ">
-                        		<div class="card-title" >
-                                <h3 class="card-label">
-                          				P2P
-                          			</h3>
-                                <span class="switch switch-sm">
-                                  <label>
-                                   <input type="checkbox" name="select"/>
-                                   <span></span>
-                                  </label>
-                               </span>
-                        		</div>
-                            <div>
-                              <a href="javascript:;" class="btn btn-icon btn-sm btn-light-primary mr-1" data-card-tool="toggle" >
-                        		  	<i class="ki ki-arrow-up icon-nm"></i>
-                        			</a>
-                            </div>
-                        	</div>
-                        	<div class="card-body">
-                        	</div>
-                        </div>
-                      </div>
-                      <!--end::Card-->
-                      <!--begin::Card-->
-                      <div class="col-6">
-                        <div class="card card-custom gutter-b" data-card="true">
-                        	<div class="card-header flex-wrap">
-                        		<div class="card-title" >
-                                <h3 class="card-label">
-                          				IP
-                          			</h3>
-                        		</div>
-                            <div>
-                              <a href="javascript:;" class="btn btn-icon btn-sm btn-light-primary mr-1" data-card-tool="toggle" >
-                        		  	<i class="ki ki-arrow-up icon-nm"></i>
-                        			</a>
-                            </div>
-                        	</div>
-                        	<div class="card-body">
-                            <div>
-                              <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group row">
-                                      <label>DHCP</label>
-                                      <div>
-                                        <span class="switch switch-sm">
-                                          <label>
-                                           <input type="checkbox" checked="checked" name="select"/>
-                                           <span></span>
-                                          </label>
-                                       </span>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>Address <span class="text-danger">*</span></label>
-                                      <div>
-                                       <input class="form-control" type="text" value="192.168.100.195"/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>Gateway <span class="text-danger">*</span></label>
-                                      <div>
-                                       <input class="form-control" type="text" value="192.168.0.1"/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>Subnet Mask</label>
-                                      <div>
-                                       <input class="form-control" type="text" value="255.255.0.0"/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>DNS1 IP <span class="text-danger">*</span></label>
-                                      <div>
-                                       <input class="form-control" type="text" value="8.8.8.8"/>
-                                      </div>
-                                    </div>
-                                    <div class="form-group">
-                                      <label>DNS2 IP</label>
-                                      <div>
-                                       <input class="form-control" type="text" value="8.8.4.4"/>
-                                      </div>
-                                    </div>
-                                     <!-- <div class="form-group">
-                                       <label>Brightness</label>
-                                       <div class="ion-range-slider">
-                                        <input type="hidden" id="kt_slider_1"/>
-                                       </div>
-                                     </div> -->
-                                </div>
+                            <div class="form-group">
+                              <label>Hue</label>
+                              <div class="row align-items-center">
+                               <div class="col-4">
+                                <input type="text" class="form-control sliderInput" placeholder="Hue"/>
+                               </div>
+                               <div class="col-8">
+                                <div class="nouislider nouislider-handle-danger slider"></div>
+                               </div>
                               </div>
                             </div>
-                        	</div>
+                            <div class="form-group">
+                              <label>Contrast</label>
+                              <div class="row align-items-center">
+                               <div class="col-4">
+                                <input type="text" class="form-control sliderInput" placeholder="Contrast"/>
+                               </div>
+                               <div class="col-8">
+                                <div class="nouislider nouislider-handle-danger slider"></div>
+                               </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Saturation</label>
+                              <div class="row align-items-center">
+                               <div class="col-4">
+                                <input type="text" class="form-control sliderInput" placeholder="Saturation"/>
+                               </div>
+                               <div class="col-8">
+                                <div class="nouislider nouislider-handle-danger slider"></div>
+                               </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Sharpness</label>
+                              <div class="row align-items-center">
+                               <div class="col-4">
+                                <input type="text" class="form-control sliderInput" placeholder="Sharpness"/>
+                               </div>
+                               <div class="col-8">
+                                <div class="nouislider nouislider-handle-danger slider"></div>
+                               </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Shutter</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>Auto</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Day&Night</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>Extern</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                             <!-- <div class="form-group">
+                               <label>Brightness</label>
+                               <div class="ion-range-slider">
+                                <input type="hidden" id="kt_slider_1"/>
+                               </div>
+                             </div> -->
+                             <div class="form-group">
+                               <label>Brightness</label>
+                               <div class="row align-items-center">
+                                <div class="col-4">
+                                 <input type="text" class="form-control sliderInput" placeholder="Brightness"/>
+                                </div>
+                                <div class="col-8">
+                                 <div class="nouislider nouislider-handle-danger slider"></div>
+                                </div>
+                               </div>
+                             </div>
+                             <div class="form-group">
+                               <label>Hue</label>
+                               <div class="row align-items-center">
+                                <div class="col-4">
+                                 <input type="text" class="form-control sliderInput" placeholder="Hue"/>
+                                </div>
+                                <div class="col-8">
+                                 <div class="nouislider nouislider-handle-danger slider"></div>
+                                </div>
+                               </div>
+                             </div>
+                             <div class="form-group">
+                               <label>Contrast</label>
+                               <div class="row align-items-center">
+                                <div class="col-4">
+                                 <input type="text" class="form-control sliderInput" placeholder="Contrast"/>
+                                </div>
+                                <div class="col-8">
+                                 <div class="nouislider nouislider-handle-danger slider"></div>
+                                </div>
+                               </div>
+                             </div>
+                             <div class="form-group">
+                               <label>Saturation</label>
+                               <div class="row align-items-center">
+                                <div class="col-4">
+                                 <input type="text" class="form-control sliderInput" placeholder="Saturation"/>
+                                </div>
+                                <div class="col-8">
+                                 <div class="nouislider nouislider-handle-danger slider"></div>
+                                </div>
+                               </div>
+                             </div>
+                             <div class="form-group">
+                               <label>Sharpness</label>
+                               <div class="row align-items-center">
+                                <div class="col-4">
+                                 <input type="text" class="form-control sliderInput" placeholder="Sharpness"/>
+                                </div>
+                                <div class="col-8">
+                                 <div class="nouislider nouislider-handle-danger slider"></div>
+                                </div>
+                               </div>
+                             </div>
+                             <div class="form-group">
+                               <label>Shutter</label>
+                               <div>
+                                 <select class="form-control selectpicker">
+                                   <option>Auto</option>
+                                   <option>option01</option>
+                                   <option>option02</option>
+                                  </select>
+                               </div>
+                             </div>
                         </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                              <label>Rotate</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>Off</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Backlight</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>Off</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>AGC</label>
+                              <div class="row align-items-center">
+                               <div class="col-4">
+                                <input type="text" class="form-control sliderInput" placeholder="AGC"/>
+                               </div>
+                               <div class="col-8">
+                                <div  class="nouislider nouislider-handle-danger slider"></div>
+                               </div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>DNR</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>DNR</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>White Balance</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>Auto</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label>Defog</label>
+                              <div>
+                                <select class="form-control selectpicker">
+                                  <option>Off</option>
+                                  <option>option01</option>
+                                  <option>option02</option>
+                                 </select>
+                              </div>
+                            </div>
+                             <!-- <div class="form-group">
+                               <label>Brightness</label>
+                               <div class="ion-range-slider">
+                                <input type="hidden" id="kt_slider_1"/>
+                               </div>
+                             </div> -->
+                        </div>
+                        <div class="col-12 sticky-bottom">
+                          <div class="btnGroup">
+                            <button type="button" class="btn btn-secondary">Reset</button>
+  													<button type="button" class="btn btn-primary">Apply</button>
+                          </div>
+												</div>
                       </div>
-                      <!--end::Card-->
-
-                    </div>
-                    <div class="col-12 sticky-bottom">
-                      <div class="col-12 btnGroup">
-                        <button type="button" class="btn btn-secondary">Reset</button>
-                        <button type="button" class="btn btn-primary">Apply</button>
-                      </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
-              </div>
             </div>
           </div>
 
